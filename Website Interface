@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Website</title>
+    <style>
+        body {
+            background-color: #D9D9D9;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+
+        header {
+            background-color: #A3D2E5;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo img {
+            width: 150px; /* Set the width to your desired value */
+            height: auto; /* Maintain the aspect ratio */
+        }
+
+        .nav {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav li {
+            margin-right: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #0c0c0c;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+
+        .nav a:hover {
+            background-color: #ff4500;
+        }
+
+        .button-primary {
+            background-color: #0c0c0c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .button-primary:hover {
+            background-color: #ff4500;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: 400px;
+            display: 500px;
+            margin: 10px;
+        }
+
+        .button-container {
+            display: 30px 20px;
+            justify-content: space-between;
+            margin: 250px;
+        }
+
+        button {
+            text-decoration: none;
+            color: #fff;
+            background-color: #004AAD;
+            padding: 30px 20px;
+            border: none;
+            border-radius: 30px;
+            text-transform: uppercase;
+            justify-content: space-evenly;
+            margin: 10px;
+        }
+
+        .search-container {
+            position: relative;
+            width: 700px;
+            height: 40px;
+            background-color: #a3e5d2;
+            border-radius: 20px; /* half of the height for circular edges */
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            justify-content: space-evenly;
+            margin: 10px;
+            
+        }
+
+        .search-box {
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: none;
+            outline: none;
+            background: transparent;
+            border-radius: 20px; /* half of the height for circular edges */
+
+            
+        }
+
+        .search-icon {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: #0c0c0c;
+        
+        }
+
+        video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: -1;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: 1;
+            color: #fff;
+            text-align: center;
+        }
+
+        .center-text {
+            text-align: center;
+            margin-top: 50px; /* Adjust the top margin as needed */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left-header">
+            <div class="logo">
+                <img src="C:\Users\Lenovo\Downloads\sale.png">
+            </div>
+            <ul class="nav">
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Kids</a></li>
+            </ul>
+        </div>
+        <div class="right-header">
+            <button class="button-primary">Login/Sign In</button>
+            <button class="button-primary">Your Wishlist</button>
+            <button class="button-primary">Track Order</button>
+            <button class="button-primary">Contact Us</button>
+            <button class="button-primary">Download App</button>
+        </div>
+    </header>
+    <div class="search-container">
+        <input type="text" class="search-box" placeholder="        What are you looking for?">
+        <div class="search-icon">&#128269;</div>
+    </div>
+    <div class="center-text">
+        <h1>THE SHOPHUNT presents </h1>
+        <h1 >THE COOLEST CASUAL WEAR </h1>
+    </div>
+    <div class="image-container">
+        <img src="C:\Users\Lenovo\Downloads\download.jpg">
+    
+        <div class="button-container">
+            <button onclick="button1Click()">SHOP FOR MEN</button>
+            <button onclick="button2Click()">SHOP FOR WOMEN</button>
+        </div>
+        <img src="C:\Users\Lenovo\OneDrive\Pictures\fem.jpg">
+    </div>
+    <script>
+        // Add your button click functionality here
+        function button1Click() {
+            alert("Thank you for choosing us...Stay tuned for futher updates in Men's Accessories and Clothings.!");
+        }
+
+        function button2Click() {
+            alert("Thank you for choosing us...We will keep you updates in Women's Accessories and Clothings.!");
+        }
+    </script>
+    <video autoplay muted loop>
+        <source src="C:\Users\Lenovo\Downloads\Colour Paper _ Green Screen _ NO WATERMARK _ VK STUDIO.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+
+<footer>
+    
+    <img src="C:\Users\Lenovo\OneDrive\Pictures\bottom.png">
+</footer>
+</body>
+</html>
